@@ -1,4 +1,5 @@
-article {
+/* My Solution */
+/* article {
   border: 5px solid #1098ad;
 }
 
@@ -53,4 +54,72 @@ ul li {
   background-color: white;
   color: black;
   border-style: none;
+} */
+
+/* ----------------------------------------------------------- */
+
+/* Main Solution */
+
+body {
+  font-family: sans-serif;
+  line-height: 1.4;
+}
+
+.product {
+  border: 4px solid black;
+}
+
+/* PRODUCT */
+.product-title {
+  background-color: #f7f7f7;
+  font-size: 22px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* PRODUCT INFORMATION */
+.price {
+  font-size: 24px;
+}
+
+.shipping {
+  font-size: 12px;
+  color: #777;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.more-info:link,
+.more-info:visited {
+  color: black;
+}
+
+.more-info:hover,
+.more-info:active {
+  text-decoration: none;
+}
+
+/* PRODUCT DETAILS */
+.details-title {
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.details-list {
+  list-style: square;
+}
+
+/* BUTTON */
+.add-cart {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.add-cart:hover {
+  background-color: #fff;
+  color: #000;
 }
