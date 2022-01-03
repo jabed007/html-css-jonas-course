@@ -1,0 +1,56 @@
+article {
+  border: 5px solid #1098ad;
+}
+
+.common-text {
+  text-transform: uppercase;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.main-heading {
+  text-align: center;
+  background-color: #f6f6f6;
+}
+
+.price strong {
+  font-size: 26px;
+}
+
+.shipping {
+  color: #6e6e6e;
+  font-size: 12px;
+}
+
+a:link {
+  text-decoration: none;
+  color: #454545;
+}
+
+a:hover {
+  text-decoration: underline #1098ad;
+  color: #333;
+}
+
+.font {
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+ul li {
+  list-style: square;
+}
+
+.btn {
+  background-color: black;
+  color: white;
+  border-style: none;
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+  border-style: none;
+}
