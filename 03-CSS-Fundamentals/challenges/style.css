@@ -71,6 +71,24 @@ body {
   margin-top: 50px;
 }
 
+h2 {
+  position: relative;
+}
+
+h2::before {
+  content: "SALE";
+  background-color: #e72a2a;
+  color: #fff1f1;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  display: inline-block;
+  padding: 5px 10px;
+  position: absolute;
+  top: -15px;
+  left: -25px;
+}
+
 /* .container {
   width: 825px;
   margin: 0 auto;
@@ -109,12 +127,13 @@ body {
   margin-bottom: 20px;
 }
 
-/* .classic-canvas {
-  margin-bottom: 15px;
-} */
+.classic-canvas {
+  margin-bottom: 5px;
+}
 
 .more-info {
   margin-bottom: 30px;
+  display: inline-block;
 }
 
 .more-info:link,
@@ -127,11 +146,21 @@ body {
   text-decoration: none;
 }
 
+.box-1,
+.box-2,
+.box-3,
+.box-4 {
+  width: 25px;
+  height: 25px;
+  background-color: #e72a2a;
+  display: inline-block;
+}
+
 /* PRODUCT DETAILS */
 .details-title {
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   margin-bottom: 15px;
 }
 
