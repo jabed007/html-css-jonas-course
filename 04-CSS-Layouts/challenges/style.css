@@ -1,6 +1,13 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
 }
 
 body {
@@ -25,9 +32,26 @@ body {
   padding: 15px;
 }
 
+.container {
+  background-color: red;
+}
+
+.product-img {
+  float: left;
+  margin-right: 40px;
+}
+
+.product-info {
+  float: left;
+  width: 240px;
+  margin-right: 40px;
+  margin-top: 20px;
+}
+
 /* PRODUCT INFORMATION */
 .price {
   font-size: 24px;
+  float: left;
 }
 
 .shipping {
@@ -35,7 +59,9 @@ body {
   color: #777;
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 8px;
   margin-bottom: 20px;
+  float: right;
 }
 
 .sale {
@@ -52,8 +78,7 @@ body {
   left: -34px;
 }
 
-.classic-canvas {
-  margin-bottom: 5px;
+.description {
   clear: both;
 }
 
@@ -98,10 +123,16 @@ body {
 }
 
 /* PRODUCT DETAILS */
+.product-details {
+  float: left;
+  width: 240px;
+  margin-top: 20px;
+}
+
 .details-title {
   font-size: 16px;
   text-transform: uppercase;
-  margin-top: 30px;
+  /* margin-top: 25px; */
   margin-bottom: 15px;
 }
 
@@ -121,13 +152,15 @@ body {
   border: none;
   font-size: 20px;
   text-transform: uppercase;
+  text-align: center;
   cursor: pointer;
   width: 100%;
   padding: 15px;
-  border-top: 4px solid black;
 }
 
 .add-cart:hover {
   background-color: #fff;
   color: #000;
+  font-weight: bold;
+  border-top: 4px solid black;
 }
