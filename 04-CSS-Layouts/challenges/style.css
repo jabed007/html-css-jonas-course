@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  background-color: red;
+  /* background-color: red; */
 }
 
 .product-img {
@@ -80,6 +80,7 @@ body {
 
 .description {
   clear: both;
+  margin-bottom: 10px;
 }
 
 .more-info:link,
