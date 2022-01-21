@@ -40,16 +40,32 @@
       .accordion {
         width: 700px;
         margin: 100px auto;
+
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
       }
 
       .item {
+        box-shadow: 0 0 32px rgba(0, 0, 0, 0.1);
+        padding: 24px;
+
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        column-gap: 24px;
+        row-gap: 32px;
+        align-items: center;
       }
 
       .number,
       .text {
         font-size: 24px;
         font-weight: 500;
-        color: #087f5b;
+        /* color: #087f5b; */
+      }
+
+      .number {
+        color: #ced4da;
       }
 
       .icon {
@@ -59,6 +75,8 @@
       }
 
       .hidden-box {
+        grid-column: 2;
+        display: none;
       }
 
       .hidden-box p {
@@ -73,11 +91,61 @@
         flex-direction: column;
         gap: 12px;
       }
+
+      .open {
+        border-top: 4px solid #087f5b;
+      }
+
+      .open .hidden-box {
+        display: block;
+      }
+
+      .open .number,
+      .open .text {
+        color: #087f5b;
+      }
     </style>
   </head>
   <body>
     <div class="accordion">
       <div class="item">
+        <p class="number">01</p>
+        <p class="text">How long do I have to return my chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam
+            expedita non sed vero mollitia quod maxime cupiditate dicta. Placeat
+            similique iusto impedit molestias.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Dolores optio rerum quibusdam excepturi, obcaecati natus ut itaque
+            </li>
+            <li>
+              inventore at ullam aspernatur molestias corporis cum quaerat!
+            </li>
+            <li>
+              Placeat similique iusto impedit molestias dolor libero vero animi.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item open">
         <p class="number">02</p>
         <p class="text">How long do I have to return my chair?</p>
         <svg
@@ -98,8 +166,7 @@
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam
             expedita non sed vero mollitia quod maxime cupiditate dicta. Placeat
-            similique iusto impedit molestias dolor libero vero animi dolorum
-            cum.
+            similique iusto impedit molestias.
           </p>
           <ul>
             <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
@@ -107,12 +174,47 @@
               Dolores optio rerum quibusdam excepturi, obcaecati natus ut itaque
             </li>
             <li>
-              inventore at ullam aspernatur molestias corporis cum quaerat
-              cumque reiciendis!
+              inventore at ullam aspernatur molestias corporis cum quaerat!
             </li>
             <li>
-              Placeat similique iusto impedit molestias dolor libero vero animi
-              dolorum cum.
+              Placeat similique iusto impedit molestias dolor libero vero animi.
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="item">
+        <p class="number">03</p>
+        <p class="text">How long do I have to return my chair?</p>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M19 9l-7 7-7-7"
+          />
+        </svg>
+        <div class="hidden-box">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est veniam
+            expedita non sed vero mollitia quod maxime cupiditate dicta. Placeat
+            similique iusto impedit molestias.
+          </p>
+          <ul>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+            <li>
+              Dolores optio rerum quibusdam excepturi, obcaecati natus ut itaque
+            </li>
+            <li>
+              inventore at ullam aspernatur molestias corporis cum quaerat!
+            </li>
+            <li>
+              Placeat similique iusto impedit molestias dolor libero vero animi.
             </li>
           </ul>
         </div>
